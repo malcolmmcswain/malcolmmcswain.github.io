@@ -2,9 +2,21 @@
 <html>
 <head>
 
+  <style>
+	  #myImg {
+		  width: 100px;
+		  height: 100px;
+		  border-radius: 100px;
+		  float: right;
+		  margin-left: 25px;
+	  }
+  </style>
+
+  <title>CIS 128 | HW 1</title>
+ 
   <meta charset="UTF-8">
   <meta name="description" content="A front-end testing ground for Malcolm McSwain">
-  <meta name="keywords" content="Malcolm,McSwain">
+  <meta name="keywords" content="Malcolm,McSwain,Computer,Science,College,San,Mateo">
   <meta name="author" content="Malcolm">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -21,18 +33,27 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">malcolmmcswain</a>
+        <a class="navbar-brand" href="#">CIS 128</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">HW 1 <span class="sr-only">(current)</span></a></li>
+          
         </ul>
       </div>
     </div>
   </nav>
-
-  <h1>Hello world!</h1>
-
+  
+  <div class="container">
+    <div class="jumbotron">
+	  <h1>Hello, world!</h1>
+	  <img src="me.jpg" id="myImg" alt="Malcolm McSwain">
+	  <p>Howdy. My name's Malcolm and I'm a friendly local developer. I enjoy the finer things in life, i.e. coffee and puppies.</p>
+	  <p>I'm taking CIS 128 because I want to learn some better practices for developing mobile apps with PhoneGap. I've used it before with Ionic, but I thought the platform was too commercialized and I'm not a huge fan of Angular 2, so I'd like to look at alternative ways to develop for mobile devices.</p>
+	  <p style="margin-top:15px;"><a class="btn btn-primary btn-lg" href="http://www.collegeofsanmateo.edu" role="button">College of San Mateo</a></p>
+	  <p style="margin-top:15px;"><a class="btn btn-info btn-lg" href="http://www.duckduckgo.com" role="button">DuckDuckGo</a></p>
+    </div>	
+  </div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
