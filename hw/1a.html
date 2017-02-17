@@ -2,13 +2,21 @@
 <html>
 <head>
   <style>
+		
 	  #img {
 		  width: 100px;
 		  height: 100px;
-		  border-radius: 100px;
 		  float: right;
 		  margin-left: 25px;
 	  }
+		
+		#txt {
+			-webkit-transition: color 0.4s ease;
+			-moz-transition: color 0.4s ease;
+			-o-transition: color 0.4s ease;
+			transition: color 0.4s ease;
+		}
+		
   </style>
 
   <title>CIS 128 | HW 1A</title>
@@ -53,7 +61,7 @@
   <div class="container">
     <div class="jumbotron">
 			<h1 id="txt">CIS 128</h1>			
-			<img src="../img/me.jpg" id="img" alt="Malcolm McSwain">
+			<img src="../img/me.jpg" alt="Malcolm McSwain" class="img-responsive img-circle" id="img">
 			<div style="height:100px;">
 				<p>Howdy. My name's Malcolm and I'm a friendly local developer. I enjoy the finer things in life, i.e. coffee and puppies.</p>
 			</div>
@@ -67,17 +75,24 @@
   </div>
   <script>
 		$('#btn').click(function() {
+			
 			$('#txt').animate({
 				fontSize : '+=20px'
 			}, 2500, function() {
+				
 				$(this).animate({
 					fontSize : '-=20px'
 				}, 2500, function() {
-					console.log('success!');
+					
+					//transition ease in css
+					$(this).css('color', '#ff0000');
+					
 				});
 			});
+			
+			$('#img').css('border', '4px solid #A1A1A1');
+			
 		});
   </script>
 </body>
 </html>
-
