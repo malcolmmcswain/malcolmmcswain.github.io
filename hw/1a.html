@@ -66,12 +66,15 @@
     </div>	
   </div>
   <script>
-		$( '#btn' ).click(function() {
-			$( '#txt' ).animate({
-				fontSize : '+=20px',
-				color    : '#ff0000'
-			}, 3000, function() {
-				console.log('success!');
+		$('#btn').click(function() {
+			$('#txt').animate({
+				fontSize : '+=20px'
+			}, 2500, function() {
+				$(this).animate({
+					fontSize : '-=20px'
+				}, 2500, function() {
+					console.log('success!');
+				});
 			});
 		});
   </script>
