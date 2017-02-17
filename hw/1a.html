@@ -1,9 +1,8 @@
 <!doctype html>
 <html>
 <head>
-
   <style>
-	  #myImg {
+	  #img {
 		  width: 100px;
 		  height: 100px;
 		  border-radius: 100px;
@@ -24,39 +23,57 @@
 
 </head>
 <body>
+ 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+       
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        
         <a class="navbar-brand" href="#">CIS 128</a>
-      </div>
+        
+			</div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="../index.html">HW 1</a></li>
+         
+					<li><a href="../index.html">HW 1</a></li>
           <li class="active"><a href="#">HW 1A <span class="sr-only">(current)</span></a></li>
-        </ul>
+          
+				</ul>
       </div>
     </div>
   </nav>
   
   <div class="container">
     <div class="jumbotron">
-	  <h1>Hello, world!</h1>
-	  <img src="img/me.jpg" id="myImg" alt="Malcolm McSwain">
-	  <div style="height:100px;">
-	  <p>Howdy. My name's Malcolm and I'm a friendly local developer. I enjoy the finer things in life, i.e. coffee and puppies.</p>
-	  </div>
-	  <p>I'm taking CIS 128 because I want to learn some better practices for developing mobile apps with PhoneGap. I've used it before with Ionic, but I thought the platform was too commercialized and I'm not a huge fan of Angular 2, so I'd like to look at alternative ways to develop for mobile devices.</p>
-	  <p style="margin-top:15px;"><a class="btn btn-primary btn-lg" href="http://www.collegeofsanmateo.edu" role="button" target="_blank">College of San Mateo</a></p>
-	  <p style="margin-top:15px;"><a class="btn btn-info btn-lg" href="http://www.duckduckgo.com" role="button" target="_blank">DuckDuckGo</a></p>
+			<h1 id="txt">CIS 128</h1>			
+			<img src="../img/me.jpg" id="img" alt="Malcolm McSwain">
+			<div style="height:100px;">
+				<p>Howdy. My name's Malcolm and I'm a friendly local developer. I enjoy the finer things in life, i.e. coffee and puppies.</p>
+			</div>
+			<p>I'm taking CIS 128 because I want to learn some better practices for developing mobile apps with PhoneGap. I've used it before with Ionic, but I thought the platform was too commercialized and I'm not a huge fan of Angular 2, so I'd like to look at alternative ways to develop for mobile devices.</p>
+			<ul>
+				<li><a href="http://www.collegeofsanmateo.edu">College of San Mateo</a></li>
+				<li><a href="http://www.duckduckgo.com">DuckDuckGo</a></li>
+			</ul>
+			<button style="margin-top:10px;" class="btn btn-danger btn-lg" id="btn">Click me!</button>
     </div>	
   </div>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		$( '#btn' ).click(function() {
+			$( '#txt' ).animate({
+				fontSize: "+=20",
+				color: "#ff0000",
+			}, 3000, function() {
+				
+			});
+		});
+  </script>
 </body>
 </html>
 
