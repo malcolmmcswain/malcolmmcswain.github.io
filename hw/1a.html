@@ -67,7 +67,12 @@
   </div>
   <script>
 		$( '#btn' ).click(function() {
-			console.log('success');
+			$( '#txt' ).animate({
+				fontSize : '+=20px',
+				color    : '#ff0000'
+			}, 3000, function() {
+				console.log('success!');
+			});
 		});
   </script>
 </body>
