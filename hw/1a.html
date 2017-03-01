@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+		
+	  #img {
+		  width: 100px;
+		  height: 100px;
+		  float: right;
+		  margin-left: 25px;
+	  }
+		
+		#txt {
+			-webkit-transition: color 0.4s ease;
+			-moz-transition: color 0.4s ease;
+			-o-transition: color 0.4s ease;
+			transition: color 0.4s ease;
+		}
+		
+  </style>
+
+  <title>CIS 128 | HW 1A</title>
+ 
+  <meta charset="UTF-8">
+  <meta name="description" content="A front-end testing ground for Malcolm McSwain">
+  <meta name="keywords" content="Malcolm,McSwain,Computer,Science,College,San,Mateo">
+  <meta name="author" content="Malcolm">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+ 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+       
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="#">CIS 128</a>
+        
+			</div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         
+					<li><a href="1.html">HW 1</a></li>
+          <li class="active"><a href="#">HW 1A <span class="sr-only">(current)</span></a></li>
+          
+				</ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="jumbotron">
+			<h1 id="txt">CIS 128</h1>			
+			<img src="../img/me.jpg" alt="Malcolm McSwain" class="img-responsive img-circle" id="img">
+			<div style="height:100px;">
+				<p>Howdy. My name's Malcolm and I'm a friendly local developer. I enjoy the finer things in life, i.e. coffee and puppies.</p>
+			</div>
+			<p>I'm taking CIS 128 because I want to learn some better practices for developing mobile apps with PhoneGap. I've used it before with Ionic, but I thought the platform was too commercialized and I'm not a huge fan of Angular 2, so I'd like to look at alternative ways to develop for mobile devices.</p>
+			<ul>
+				<li><a href="http://www.collegeofsanmateo.edu" target="_blank">College of San Mateo</a></li>
+				<li><a href="http://www.duckduckgo.com" target="_blank">DuckDuckGo</a></li>
+			</ul>
+			<button style="margin-top:10px;" class="btn btn-danger btn-lg" id="btn">Click me!</button>
+    </div>	
+  </div>
+  <script>
+		$('#btn').click(function() {
+			
+			$('#txt').animate({
+				fontSize : '+=20px'
+			}, 2500, function() {
+				
+				$(this).animate({
+					fontSize : '-=20px'
+				}, 2500, function() {
+					
+					//transition ease in css
+					$(this).css('color', '#ff0000');
+					
+				});
+			});
+			
+			$('#img').css('border', '4px solid #A1A1A1');
+			
+		});
+  </script>
+</body>
+</html>
