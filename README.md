@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to my awesome website!
 
-You can use the [editor on GitHub](https://github.com/malcolmmcswain/malcolmmcswain.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Guy waving](https://c8.alamy.com/comp/H1J0BF/businessman-waving-hi-to-his-colleague-H1J0BF.jpg)
 
-### Markdown
+This is a [link](http://duckduckgo.com). And this is a [relative link](/hello-again.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### This is a subtitle
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+**This code**
 ```
+becomes **This stuff**
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- This
+- is
+- a
+- bulleted
+- list
 
-### Jekyll Themes
+1. This
+2. is
+3. a
+4. numbered
+5. list
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/malcolmmcswain/malcolmmcswain.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Here is some **Bold** and _Italic_ and `Code` and ***BoldTalic*** ~~strikethrough~~ text
 
-### Support or Contact
+> And some quoted text
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [x] Finish my task list
+- [ ] Finish this assignment
